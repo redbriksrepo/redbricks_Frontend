@@ -8,11 +8,20 @@ import { Router } from '@angular/router';
 })
 export class ConflictComponent implements OnInit {
 
-  constructor(private router: Router ) { }
+
+  conflict: boolean = true;
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
-  onSubmit = () => {
-    this.router.navigate(['/new-proposal', 'space-availability']);
-}
+
+  registerBroker = () => {
+    this.router.navigate(['/new-proposal','space-availability'])
+  }
+
+
+  
 }
