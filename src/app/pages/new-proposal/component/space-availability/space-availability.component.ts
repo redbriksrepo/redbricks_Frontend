@@ -14,7 +14,7 @@ export class NewProposalSpaceAvailabilityComponent implements OnInit {
 
     nonStandardRequirement: boolean = false;
     proposalId!: string;
-
+    serviced: boolean=false;
     proposalExtraDetailForm = new FormGroup({
         'consolidated': new FormControl(''),
         'tenure': new FormControl(''),

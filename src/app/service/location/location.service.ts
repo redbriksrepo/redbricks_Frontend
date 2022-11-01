@@ -32,12 +32,12 @@ export class LocationService {
             image: ['location-preview.png']
         },
         {
-            location: 'Bangalor',
+            location: 'Bengaluru',
             center: 'Salarpuria',
             image: ['location-preview.png']
         },
         {
-            location: 'Bangalor',
+            location: 'Bengaluru',
             center: 'Kharadi',
             image: ['location-preview.png']
         },
@@ -47,7 +47,7 @@ export class LocationService {
             image: ['location-preview.png']
         },
         {
-            location: 'Bangalor',
+            location: 'Bengaluru',
             center: 'Beach',
             image: ['location-preview.png']
         },
