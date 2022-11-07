@@ -24,7 +24,14 @@ const Routing: Routes = [
         loadChildren: () => {
             return import('./old-proposal/old-proposal.module').then((m) => m.OldProposalModule);
         }
+     },
+     {
+        path: 'view-log',
+        loadChildren: () => {
+            return import('./view-log/view-log.module').then((m) => m.ViewLogModule);
+        }
      }
+
 
     
 

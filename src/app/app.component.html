@@ -1,1 +1,37 @@
+<div class="container">
+    
+
+    <button mat-button mat-menu-item [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    <mat-menu #menu="matMenu" class="myClass">
+        <div class="person">
+            <button mat-menu-item><mat-icon fontIcon="person">person</mat-icon></button>
+            <span class="nothing1">Person</span>
+        </div>
+        <div class="home">
+        <button mat-menu-item type="submit" routerLink="./"><mat-icon>home</mat-icon></button>
+        <span class="nothing2">Home</span>
+    </div>
+        <div class="log">
+        <button mat-menu-item type="submit" routerLink="/view-log"><mat-icon>insert_drive_file</mat-icon></button>
+        <span class="nothing3">View Log</span>
+    </div>
+    
+        <div class="logout">
+        <button mat-menu-item><mat-icon>logout</mat-icon></button>
+        <span class="nothing4">Logout</span>
+    </div>
+      </mat-menu>
+      
+
+    
+<!-- <mat-select>
+    <mat-option> <mat-icon  fontIcon="home"></mat-icon> </mat-option> 
+   <mat-option> <mat-icon  fontIcon=" person"></mat-icon> </mat-option> 
+    <mat-option> <mat-icon  fontIcon="insert_drive_file"></mat-icon></mat-option>
+    <mat-option> <mat-icon  fontIcon="logout"></mat-icon> </mat-option>
+</mat-select> -->
+</div>
+
 <router-outlet></router-outlet>

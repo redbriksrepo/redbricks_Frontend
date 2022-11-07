@@ -13,6 +13,12 @@ const routes: Routes = [
     loadChildren: () => {
       return import('./auth/auth.module').then((m) => m.AuthModule);
     }
+  },
+  {
+    path: 'view-log',
+    loadChildren: () => {
+      return import('./pages/view-log/view-log.module').then((m)=> m.ViewLogModule);
+    }
   }
 ];
 

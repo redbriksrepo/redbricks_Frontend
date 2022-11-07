@@ -1,3 +1,6 @@
+*{
+    font-size: 1.1rem;
+}
 @mixin flex_center_center {
     display: flex;
     justify-content: center;
@@ -12,7 +15,7 @@
 }
 div{
     text-align: center;
-    margin: 5px 0px ;
+    margin: 0px 0px ;
 }
 .container {
     @include flex_center_center();
@@ -30,8 +33,9 @@ div{
             height: 28rem;
             background-color: rgba(255, 255, 255, 0.656);
             border-radius:2.5rem ;
-            border: 1px solid #707070;
+            
             flex-direction: column;
+            box-shadow: 0 10px 9px rgb(0 0 0 / 19%), 0 5px 14px rgb(0 0 0 / 10%);
 
             .uid{
                 @include inputs();
@@ -39,9 +43,9 @@ div{
                 border-radius:4rem;
                 padding: 12px 20px;
                 margin: 8px 0;
-                
-                
-                color: #C4C4C4;
+                color: #ffffff;
+            }::placeholder{
+                color: #C4C4C4
             }
             .yesno{
                 @include inputs();
@@ -84,14 +88,14 @@ div{
                 min-width: 64px;
                 line-height: 36px;
                 padding: 0 16px;
-                border-radius: 1rem;
+                border-radius: 0.5rem;
                 overflow: visible;
-                font-size: medium;
+                font-size: 1.1rem;
                 transform: translate3d(0, 0, 0);
             }
             .otp::placeholder{
                 color: #ffffff;
-                font-size: medium;
+                font-size: 1.1rem;
             }
             .otpdiv{
                
@@ -105,7 +109,7 @@ div{
             }
             .offer{
                 @include inputs();
-                border-radius:1rem;
+                border-radius:0.5rem;
                 width: 15rem;
                 padding: 12px 20px;
                 margin: 20px 10px;
