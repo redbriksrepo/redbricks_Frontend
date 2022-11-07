@@ -14,15 +14,13 @@ export class NewProposalSpaceAvailabilityComponent implements OnInit {
 
     nonStandardRequirement: boolean = false;
     proposalId!: string;
-    isServiced: boolean = false;
-    isAcceptConsolidatedSeats: boolean = true;
-
+ 
     proposalExtraDetailForm = new FormGroup({
         'consolidated': new FormControl(''),
-        'Tenure': new FormControl(''),
-        'LockIn': new FormControl(''),
-        'NonStandardRequirement': new FormControl(''),
-        'Serviced': new FormControl('')
+        'tenure': new FormControl(''),
+        'lockIn': new FormControl(''),
+        'nonStandardRequirement': new FormControl(''),
+        'serviced': new FormControl('')
     });
 
     constructor(
@@ -53,19 +51,9 @@ export class NewProposalSpaceAvailabilityComponent implements OnInit {
     }
 
     generateProposal = () => {
-        let serviced = this.isServiced ? 'yes' : 'no';
-        let acceptConsolidatedSeats = this.isAcceptConsolidatedSeats ? 'yes' : 'no';
-        this.proposalExtraDetailForm.patchValue({ consolidated: acceptConsolidatedSeats, Serviced: serviced });
-        this.proposalService.generateProposal(this.proposalId, 'left', this.proposalExtraDetailForm.value).subscribe({
-            next: (result: any) => {
-                if (result.Message === 'Proposal Generated Successfully') {
-                    this.router.navigate(['/new-proposal','proposal-preview',this.proposalId]);
-                }
-            },
-            error: (err: any) => {
-
+        this.proposalService.generateProposal(this.proposalId, 'left').subscribe((result: any) => {
+                this.router.navigate(['/'])
             }
-        });
-        // this.router.navigate(['/']);
+        );
     }
 }
