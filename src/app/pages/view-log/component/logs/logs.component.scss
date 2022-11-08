@@ -1,0 +1,81 @@
+.container{
+     background-color: #ECECEC;
+     font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+mat-cell[class="false"]{
+     background-color: #888585;
+}
+.gray{
+     td{
+     background-color: #888585;
+     }
+}
+.white{
+     td{
+     background-color: #feffff;
+     }
+}
+
+table {
+     width: 70%;
+     color: white;
+     background-color: #ECECEC;
+     margin: 0rem 10rem;
+     text-align: center;
+     font-size: 1.1rem;
+     box-shadow: none;
+   
+     th{
+          background-color: #C3343A;
+          border-right: 1px solid white;
+          padding: 1rem;
+          color: white;
+          text-align: center;
+          font-size: 1.1rem;
+          
+     }
+     td{
+          background-color: #8B8C8D;
+          border-right: 1px solid white;
+          padding: 1rem;         
+     }
+     tr:last-child>td:first-child{
+          border-bottom-left-radius: 4rem;
+          
+     }
+     tr:last-child>td:last-child{
+          border-bottom-right-radius: 4rem;
+          
+     }
+     tr:last-child{
+          align-content: center;
+     }
+     
+   }
+   .header-table{
+     p{
+          color: #C3343A;
+     }
+     font-size: 1.1rem;
+     display: flex;
+     margin-top: 5rem;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     input{
+          border-top: 1px ;
+          border-left: 1px;
+          border-right: 1px;
+          background-color: #ECECEC;
+          font-size: 1.1rem;
+          
+     }
+ .mat-paginator-container{
+     background-color: #8B8C8D;
+ }
+   }

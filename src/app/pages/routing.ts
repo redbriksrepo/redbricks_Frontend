@@ -24,6 +24,7 @@ const Routing: Routes = [
         loadChildren: () => {
             return import('./old-proposal/old-proposal.module').then((m) => m.OldProposalModule);
         }
+
     },
     {
         path: 'log',
@@ -31,6 +32,7 @@ const Routing: Routes = [
             return import('./log/log.module').then((m) => m.LogModule);
         }
     }
+
 ]
 
 

@@ -6,6 +6,7 @@
 @import "../new-proposal/space-availability/custom-angular-material.scss";
 
 
+
 new-proposal-client-info {
     @include custom_client-info_angular-material();
 }
@@ -21,4 +22,7 @@ new-proposal-conflict{
 
 new-proposal-space-availability{
     @include custom_space-availability_angular-material();
+}
+.mat-menu-panel{
+    min-width: none;;
 }

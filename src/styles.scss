@@ -94,15 +94,25 @@ $Redbricks_Frontend-theme: mat.define-light-theme((color: (primary: $Redbricks_F
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import "./assets/scss/main/main-custom-angular-material.scss";
-
+@import "./assets/scss/app/app-custom-angular-material.scss";
 html,
 body {
   height: 100%;
+  box-sizing: border-box;
 }
-
+.mat-sort-header-container{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  letter-spacing: normal;
+  outline: 0;
+  justify-content: center;
+}
 body {
   margin: 0;
 }
+
+
 
 * {
   font-family: 'Montserrat', sans-serif;
