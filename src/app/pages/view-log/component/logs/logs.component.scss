@@ -6,6 +6,9 @@
     align-items: center;
     
 }
+mat-cell[class="false"]{
+     background-color: #888585;
+}
 .gray{
      td{
      background-color: #888585;

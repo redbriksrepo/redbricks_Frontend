@@ -47,11 +47,8 @@
                     </div>
                 </div>
                 <div class="extra-proposal-details__bottom">
-
-                    <button type="button" mat-raised-button color="isServiced ? 'primary':'accent'" (click)="isServiced = !isServiced" value="yes" formControlName="Serviced">Serviced</button>
-                    <button type="button" mat-raised-button color="isServiced ? 'accent':'primary'" (click)="isServiced = !isServiced" value="no" formControlName="Serviced">Non Serviced</button>
-
-
+                    <button type="button" mat-raised-button [color]="isServiced ? 'primary':'accent'" (click)="isServiced = !isServiced" value="yes" formControlName="Serviced">Serviced</button>
+                    <button type="button" mat-raised-button [color]="isServiced ? 'accent':'primary'" (click)="isServiced = !isServiced" value="no" formControlName="Serviced">Non Serviced</button>
                 </div>
             </div>
             <div class="form-action">
