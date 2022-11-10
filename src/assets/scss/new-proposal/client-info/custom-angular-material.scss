@@ -1,7 +1,21 @@
+@mixin for-desktop {
+    @media (max-width: 1315px) {
+      @content;
+    }
+  }
 @mixin custom_client-info_angular-material {
     .mat-form-field-appearance-fill {
             font-size: 1.1rem;
-    
+    @include for-desktop(){
+        font-size: 1rem;
+
+    }
+    .mat-form-field-wrapper{
+        @include for-desktop(){
+            padding-bottom: 0px;
+        }
+      
+    }
             .mat-form-field-flex {
                 background-color: #C3343A;
                 border-radius: 0.5rem !important;
