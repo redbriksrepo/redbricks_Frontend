@@ -4,6 +4,7 @@
   }
 }
 
+
 @mixin field-card {
   display: flex;
   justify-content: space-between;
@@ -64,7 +65,6 @@
     display: flex;
     width: inherit;
     @include for-desktop {
-
       width: 100%;
     }
     form {
@@ -107,13 +107,13 @@
                   width: 24rem;
                   font-size: 1rem;
                   padding-inline-start: 0.3rem;
-                //   justify-content: space-evenly;
+                  //   justify-content: space-evenly;
                 }
                 mat-form-field {
                   width: 10rem;
                   padding-inline: 1rem;
                   padding-block: 0.5rem;
-                  @include for-desktop(){
+                  @include for-desktop() {
                     padding-inline: 0.6rem;
                     padding-block: 0.3rem;
                     font-size: 1rem;
@@ -151,13 +151,13 @@
                   width: 24rem;
                   font-size: 1rem;
                   padding-inline-start: 0.3rem;
-                //   justify-content: space-evenly;
+                  //   justify-content: space-evenly;
                 }
                 mat-form-field {
                   width: 10rem;
                   padding-inline: 1rem;
                   padding-block: 0.5rem;
-                  @include for-desktop(){
+                  @include for-desktop() {
                     padding-inline: 0.6rem;
                     padding-block: 0.3rem;
                     font-size: 1rem;
@@ -180,9 +180,9 @@
           border: 2px solid #c3343a;
           border-radius: 2rem;
           padding: 3rem;
-            @include for-desktop(){
-                padding: 2rem;
-            }
+          @include for-desktop() {
+            padding: 2rem;
+          }
           .counter-card {
             width: 17rem;
             height: 17rem;
@@ -193,9 +193,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            @include for-desktop(){
-                width: 15rem;
-                height: 15rem;
+            @include for-desktop() {
+              width: 15rem;
+              height: 15rem;
             }
             .counter {
               display: flex;
@@ -205,8 +205,8 @@
 
               .label {
                 font-size: 1.2rem;
-                @include for-desktop(){
-                    font-size: 1rem;
+                @include for-desktop() {
+                  font-size: 1rem;
                 }
               }
 
