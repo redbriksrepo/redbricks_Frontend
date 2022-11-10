@@ -80,8 +80,8 @@
         align-items: center;
         gap: 5rem;
         @include for-desktop {
-          margin-top: 1rem;
-          gap: 4rem;
+        //   margin-top: 1rem;
+        //   gap: 4rem;
         }
 
         .left {
@@ -106,7 +106,7 @@
                 @include for-desktop() {
                   width: 24rem;
                   font-size: 1rem;
-                  padding-inline-start: 0.3rem;
+                //   padding-inline-start: 0.3rem;
                   //   justify-content: space-evenly;
                 }
                 mat-form-field {
@@ -114,8 +114,9 @@
                   padding-inline: 1rem;
                   padding-block: 0.5rem;
                   @include for-desktop() {
-                    padding-inline: 0.6rem;
-                    padding-block: 0.3rem;
+                    // padding-inline: 0.6rem;
+                    // padding-block: 0.3rem;
+                    width: 9rem;
                     font-size: 1rem;
                   }
                 }
@@ -150,7 +151,7 @@
                 @include for-desktop() {
                   width: 24rem;
                   font-size: 1rem;
-                  padding-inline-start: 0.3rem;
+                //   padding-inline-start: 0.3rem;
                   //   justify-content: space-evenly;
                 }
                 mat-form-field {
@@ -158,8 +159,9 @@
                   padding-inline: 1rem;
                   padding-block: 0.5rem;
                   @include for-desktop() {
-                    padding-inline: 0.6rem;
-                    padding-block: 0.3rem;
+                    width: 9rem;
+                    // padding-inline: 0.6rem;
+                    // padding-block: 0.3rem;
                     font-size: 1rem;
                   }
                 }
@@ -181,7 +183,7 @@
           border-radius: 2rem;
           padding: 3rem;
           @include for-desktop() {
-            padding: 2rem;
+            // padding: 2rem;
           }
           .counter-card {
             width: 17rem;
